@@ -18,12 +18,36 @@ export default {
             title: 'Child Node #1',
             children: [
               {
-                title: 'Deep Child Node'
+                title: 'Deep Child Node #1',
+                children: [
+                  {
+                    title: 'Deepest Child Node #1'
+                  },
+                  {
+                    title: 'Deepest Child Node #2'
+                  }
+                ]
+              },
+              {
+                title: 'Deep Child Node #2',
+                children: [
+                  {
+                    title: 'Deepest Child Node #1'
+                  },
+                  {
+                    title: 'Deepest Child Node #2'
+                  }
+                ]
               }
             ]
           },
           {
-            title: 'Child Node #2'
+            title: 'Child Node #2',
+            children: [
+              {
+                title: 'Deep Child Node'
+              }
+            ]
           }
         ]
       }
@@ -36,9 +60,19 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.material-icons {
+  vertical-align: middle;
 }
 </style>
